@@ -18,3 +18,5 @@ def get_similarity(texts: Texts):
     embeddings = embed([texts.text1, texts.text2])
     similarity = np.inner(embeddings[0], embeddings[1]).item()
     return {"similarity": similarity}
+
+#deployment ahead
